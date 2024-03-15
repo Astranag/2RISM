@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
 function Header() {
@@ -14,10 +15,10 @@ function Header() {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">TBC</a>
+          <a className="nav-link" href="#">Saved Places</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">TBC</a>
+          <a className="nav-link" href="#">Signup</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">TBC</a>
