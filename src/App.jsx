@@ -15,8 +15,9 @@ function App() {
      <Header />
      <Grid container space={3} style = {{ width : '100%'}}> 
      <Grid item xs={12} md={4}>
-
+     {/* <Divider orientation="vertical" flexItem style={{ backgroundColor: 'blue' }} /> */}
               <List/>
+              
      </Grid>
      
      <Grid item xs={12} md={8}>
