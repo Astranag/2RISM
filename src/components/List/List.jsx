@@ -1,7 +1,8 @@
 import React, {useState, useEffect, createRef} from "react";
 import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, Select, Divider } from "@material-ui/core";
-import PlaceInfo from "../PlaceInfo/PlaceInfo";
-import useStyles from './styles'
+import PlaceInfo from '../PlaceInfo/PlaceInfo';
+
+import useStyles from './styles';
 
 
 const List = ({places, childClicked, isLoading, type, setType, rating, setRating}) => {
@@ -55,6 +56,7 @@ const List = ({places, childClicked, isLoading, type, setType, rating, setRating
                 <Grid container spacing={3} className={classes.list}>
                     {places?.map((place,i) => (
                         <Grid item key={i} ref={elRefs[i]} xs={12}>
+                        <PlaceInfo></PlaceInfo>
                             <PlaceInfo 
                                 place={place}
                                 selected={Number(childClicked) === i}
