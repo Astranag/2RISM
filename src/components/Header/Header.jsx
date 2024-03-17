@@ -1,9 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React from 'react';
+import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
+// import SearchIcon from '@material-ui/icons/Search';
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  
+  <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Travel planner</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
