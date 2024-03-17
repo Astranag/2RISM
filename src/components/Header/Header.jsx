@@ -1,13 +1,32 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+// import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
-// import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@material-ui/icons/Search';
 
-function Header() {
+
+import useStyles from './styles.js';
+
+
+// function Header() {
+  const Header = ()  => {
+  // const Header = ({ onPlaceChanged, onLoad }) => {
+
+  const classes = useStyles();
+
+
   return (
-  
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
+    <AppBar position="static">
+      <Toolbar className={classes.toolbar}>
+        <Typography variant="h5" className={classes.title}>
+        Travel Planner
+        </Typography>
+
+
+        
+        <Box display="flex">
+          <Typography variant="h6" className={classes.title}>
+          {/* <div className="container-fluid">
     <a className="navbar-brand" href="#">Travel planner</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -35,9 +54,25 @@ function Header() {
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
-  </div>
-</nav>
-  )
-}
+  </div> */}
+          </Typography>
+          {/* <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}> */}
+       
+            <div className={classes.search}>
+              <div className={classes.searchIcon}>
+                <SearchIcon />
+              </div>
+              <InputBase placeholder="Search…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
+            </div>
+          
+          {/* </Autocomplete> */}
+        </Box>
+        </Toolbar>
+  {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  
+</nav> */}
+ </AppBar>
+ );
+};
 
-export default Header
+export default Header;
