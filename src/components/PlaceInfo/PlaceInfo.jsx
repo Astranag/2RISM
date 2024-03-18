@@ -40,6 +40,47 @@ function handleInputChange(e){
 
 
 
+  function searchLocation(query){
+    TravelAdvisorApi.getLocations(query)
+    .then(response => {
+      console.log(response.data);
+      console.log(response.data.data[0].result_object.name)
+      const filteredResults = response.data.data.filter(item => item.result_type === 'lodging')
+      const firstFiveResults = filteredResults.slice(0, 5);
+      console.log(firstFiveResults)
+    setSearchData({
+      search: query,
+      results: response.data.data[0],
+      hotel: firstFiveResults,
+      attraction : []
+    })
+  
+      Attraction.getAttraction(response.data.data[0].result_object.location_id)
+      .then(attractionResponse => {
+        console.log(attractionResponse.data);
+        const attractionResults = attractionResponse.data.data
+        const firstFive = attractionResults.slice(0,5)
+        console.log(firstFive[0].description)
+        setSearchData( prevState => ({
+          ...prevState,
+          attraction : firstFive
+        }))
+     
+      
+      })
+      
+      
+   
+    })
+    .catch(error => {
+      console.error(error);
+      throw error; 
+    });
+  
+   
+  }
+  
+  
 
 
 
