@@ -124,6 +124,25 @@ rating = {hotelObj.result_object.rating}
 } 
 
 
+{ searchData.attraction.map((attractionObj,i) => (
+
+<Attractions
+
+key = {i}
+title ={attractionObj.name}
+img = {attractionObj.photo.images.original.url}
+address = {attractionObj.address}
+ranking = {attractionObj.ranking}
+description = {attractionObj.description}
+number = {attractionObj.number}
+booking = {attractionObj.booking.url}
+/>
+
+
+))
+
+}
+
     
     </>
   )
