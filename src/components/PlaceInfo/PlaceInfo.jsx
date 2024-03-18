@@ -96,6 +96,12 @@ function handleInputChange(e){
    handleInputChange={handleInputChange}
     />
     
+       {/* <Info 
+        name = {searchData.results.result_object.name}
+      image = {searchData.results.result_object.photo.images.large.url}
+      description = {searchData.results.result_object.geo_description}
+      
+    />       */}
     
     
     </>
