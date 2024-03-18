@@ -6,3 +6,27 @@ import Info from './Info'
 import Hotels from './Hotels'
 import Attraction from '../../utils/Attraction'
 import Attractions from './Attractions'
+
+function PlaceInfo() {
+
+const [searchData, setSearchData] = useState({
+    search: '',
+    results: [],
+    hotel: [],
+    attraction: [],
+})
+
+
+
+
+
+
+
+
+
+  return (
+    <div>PlaceInfo</div>
+  )
+}
+
+export default PlaceInfo
