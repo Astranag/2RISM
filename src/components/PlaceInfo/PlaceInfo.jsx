@@ -103,6 +103,27 @@ function handleInputChange(e){
       
     />       */}
     
+
+    { searchData.hotel.map((hotelObj,i) => (
+
+<Hotels 
+
+key = {i}
+title ={hotelObj.result_object.name}
+img = {hotelObj.result_object.photo.images.original.url}
+address = {hotelObj.result_object.address}
+rating = {hotelObj.result_object.rating}
+
+/>
+
+
+))
+
+
+
+} 
+
+
     
     </>
   )
