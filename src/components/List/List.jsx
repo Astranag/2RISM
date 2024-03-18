@@ -56,14 +56,12 @@ const List = ({places, childClicked, isLoading, type, setType, rating, setRating
                 <Grid container spacing={3} className={classes.list}>
                     {places?.map((place,i) => (
                         <Grid item key={i} ref={elRefs[i]} xs={12}>
-                        <PlaceInfo></PlaceInfo>
-                            <PlaceInfo 
-                                place={place}
-                                selected={Number(childClicked) === i}
-                                refProp={elRefs[i]}
-                                />
+                        {/* <PlaceInfo/> */}
                         </Grid>
+                        
                     ))} {/**.map() means only if there are places available then iterate over places */}
+               
+                 <PlaceInfo/>  
                 </Grid>
                 </>
                 )
