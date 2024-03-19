@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Travel from '../utils/TravelAdvisorApi'
 import {NavLink, Link} from 'react-router-dom'
-
+import logo from '../../assets/logo.png'
 
 
 
@@ -13,7 +13,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Travel planner</a>
+    <a className="navbar-brand" href="#"><img src={logo} width="100" height="100" alt="2RISM"/></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
