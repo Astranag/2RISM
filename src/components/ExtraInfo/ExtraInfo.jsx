@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
 import country from '.././utils/RestCountries';
-import Details from './Details';
+import Details from './Details'
 
 function ExtraInfo() {
     const [searchData, setSearchData] = useState({
