@@ -10,6 +10,7 @@ function Search(props) {
         name='search'
         value={props.value}
         onChange={props.handleInput}
+        placeholder='Search...'
         />
 
         <button
