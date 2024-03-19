@@ -96,12 +96,17 @@ function handleInputChange(e){
    handleInputChange={handleInputChange}
     />
     
+<h1>Things to do and places to stay</h1>
+
+
        {/* <Info 
         name = {searchData.results.result_object.name}
       image = {searchData.results.result_object.photo.images.large.url}
       description = {searchData.results.result_object.geo_description}
       
     />       */}
+
+    <h2>Hotels</h2>
     
 
     { searchData.hotel.map((hotelObj,i) => (
@@ -123,6 +128,7 @@ rating = {hotelObj.result_object.rating}
 
 } 
 
+<h2>Attractions</h2>
 
 { searchData.attraction.map((attractionObj,i) => (
 
