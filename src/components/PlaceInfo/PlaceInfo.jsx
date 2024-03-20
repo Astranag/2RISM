@@ -2,7 +2,7 @@ import React from 'react'
 import SearchForm from './SearchForm'
 import { useState } from 'react'
 import TravelAdvisorApi from '../../components/utils/TravelAdvisorApi'
-// import Info from './Info'
+import CityInfo from './CityInfo'
 import Hotels from './Hotels'
 import Attraction from '../../components/utils/Attraction'
 import Attractions from './Attractions'
@@ -98,12 +98,12 @@ function handleInputChange(e){
     
     <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Explore Exciting Activities and Accommodations</h1>
 
-       {/* <Info 
-        name = {searchData.results.result_object.name}
-      image = {searchData.results.result_object.photo.images.large.url}
-      description = {searchData.results.result_object.geo_description}
+        <CityInfo 
+           name={searchData.results.result_object && searchData.results.result_object.name}
+           image={searchData.results.result_object && searchData.results.result_object.photo.images.large.url}
+           description={searchData.results.result_object && searchData.results.result_object.geo_description}
       
-    />       */}
+    />       
 
 <h2 style={{ textAlign: 'left', margin: '20px 0' }}>Hotels</h2>
     
