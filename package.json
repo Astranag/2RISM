@@ -29,7 +29,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
     "vite": "^5.1.6"
   },
   "description": "## Project Requirements With your group, you’ll again conceive and execute a design that solves a real-world problem. In creating your first collaborative front-end, single-page application, you’ll create a React front end to build a user-focused platform. You’ll continue to build on the agile development methodologies you’ve used throughout this course. These include storing your project code in GitHub, managing your work with a project management tool, and implementing feature and bug fixes using the Git branch workflow and pull requests.",
