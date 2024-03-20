@@ -14,16 +14,16 @@ function Header() {
   return (
     <nav className="navbar nav navbar-expand-lg bg-warning " >
   <div className="container-fluid" >
-    <NavLink className="navbar-brand nav-link" href="/home" exact to='/'><img src={logo} width="100" height="100" alt="2RISM"/></NavLink>
+    <NavLink className="navbar-brand nav-link" href="/home" to='/'><img src={logo} width="100" height="100" alt="2RISM"/></NavLink>
     <div className="ms-auto nav-tabs " style={{ marginTop: '10px', listStyle: 'none', display: 'flex'}}> 
   <li style={{ marginRight: '10px' }}> 
-    <NavLink className="nav-link" activeClassName='active' exact to='/'>Home</NavLink>
+    <NavLink className="nav-link" activeclassname='active' to='/'>Home</NavLink>
   </li>
   <li style={{ marginRight: '10px' }}> 
-    <NavLink className="nav-link" activeClassName='active' exact to='/map'>Map</NavLink>
+    <NavLink className="nav-link" activeclassname='active' to='/map'>Map</NavLink>
   </li>
   <li style={{ marginRight: '10px' }}> 
-    <NavLink className="nav-link" activeClassName='active' exact to='/extra'>Extra</NavLink>
+    <NavLink className="nav-link" activeclassname='active' to='/extra'>Extra</NavLink>
   </li>
 </div>
   </div>
