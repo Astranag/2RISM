@@ -12,6 +12,7 @@ function Header() {
 
 
   return (
+
     <nav className="navbar nav navbar-expand-lg bg-warning " >
   <div className="container-fluid" >
     <NavLink className="navbar-brand nav-link" href="/home" exact to='/'><img src={logo} width="100" height="100" alt="2RISM"/></NavLink>

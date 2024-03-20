@@ -1,33 +1,58 @@
-# Project 2: Client-Side Single-Page Application Project
 
-## Project Requirements
-With your group, you’ll again conceive and execute a design that solves a real-world problem. In creating your first collaborative front-end, single-page application, you’ll create a React front end to build a user-focused platform. You’ll continue to build on the agile development methodologies you’ve used throughout this course. These include storing your project code in GitHub, managing your work with a project management tool, and implementing feature and bug fixes using the Git branch workflow and pull requests.
+## 2RISM
+ Client-Side Single-Page Application Project
 
-For this project, you should start from scratch. Doing so will allow you to revisit your front-end abilities in the context of React. Your skills have continued to improve since the first project, so naturally your approach will be different considering the experience you’ve gained with each new application you’ve built.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38a9fdfe-0fd9-494d-906e-034b76c7367d/deploy-status)](https://app.netlify.com/sites/sparkling-dolphin-abfbd3/deploys)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT) [![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-You and your group will use everything you’ve learned to create a real-world client-side single-page application that you’ll be able to showcase to potential employers. This project will provide you with the best opportunity to demonstrate your problem-solving skills, which employers will want to observe. The user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
 
-Use React.
+## 📖 Description
 
-Use Node.js.
 
-Have both GET routes for retrieving and adding new data.
 
-Be deployed using Netlify.
 
-Use at least two libraries, packages, or technologies that we haven't discussed.
+## 🚩 Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
 
-Have a polished front end/UI.
+## Features 
 
-Meet good quality coding standards (indentation, scoping, naming).
+* Activities and Accomodations :  
+* Map :
+* Extra : 
+  ## Technologies Used
 
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+- **Frontend:** HTML, CSS, ReactJS, Bootstrap
+- **Version Control:** Git
+- **Package Manager**: NPM
+- **Web Hosting Service**: Netlify
+- **Code Quality:** Prettier
 
-## React + Vite
+## Usage 
+Feel free to explore the website to learn more about...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* The live version of this project can be found: [2RISM](https://sparkling-dolphin-abfbd3.netlify.app/)
 
-Currently, two official plugins are available:
+  ![Demo]() 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Credits
+
+
+
+## Badges
+
+![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)

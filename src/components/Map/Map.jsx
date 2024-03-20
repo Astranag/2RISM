@@ -77,6 +77,7 @@ useEffect(() => {
 }, [location]);
 return (
 <>
+<h1 style={{ fontSize: '40px', color: '#333', textAlign: 'center', marginBottom: '20px' }}> Discover the World</h1>
 <Search
 
 value={location.search}
