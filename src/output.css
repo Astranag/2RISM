@@ -548,20 +548,4 @@ video {
 
 /* Import Tailwind CSS utility styles */
 
-.collapse {
-  visibility: collapse;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.me-2 {
-  margin-inline-end: 0.5rem;
-}
-
-.me-auto {
-  margin-inline-end: auto;
-}
-
 /* Your custom CSS styles go here */
