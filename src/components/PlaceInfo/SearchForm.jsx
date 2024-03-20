@@ -1,7 +1,6 @@
 import React from 'react'
-import './SearchForm.css'
 import Button from 'react-bootstrap/Button'
-
+import './SearchForm.css'
 function SearchForm(props) {
   return (
     <>
@@ -31,6 +30,7 @@ function SearchForm(props) {
     <Button
     onClick={props.handleFormSubmit}
     type='submit'
+
     style={{background: 'rgb(62, 137, 250)', color: 'white'}}
     className="search-button"
     
