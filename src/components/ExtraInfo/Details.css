@@ -1,0 +1,26 @@
+.details-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .flag-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    margin-bottom: 10px;
+  }
+  
+  .detail-item h3 {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .details-container {
+      max-width: 100%;
+    }
+  }

@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import country from '.././utils/RestCountries';
 import Details from './Details';
 
+
 function ExtraInfo() {
     const [searchData, setSearchData] = useState({
         search: '',
@@ -62,6 +63,7 @@ function ExtraInfo() {
 
     return (
         <>
+         <h1 style={{ fontSize: '40px', color: '#333', textAlign: 'center', marginBottom: '20px' }}> Explore detailed information about a country</h1>
             <SearchBar
                 value={searchData.search}
                 submit={submit}

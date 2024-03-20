@@ -89,15 +89,14 @@ function handleInputChange(e){
   return (
     <>
 
-    <h3>Search location</h3>
+
     <SearchForm 
    value ={searchData.search}
    handleFormSubmit={handleFormSubmit}
    handleInputChange={handleInputChange}
     />
     
-<h1>Things to do and places to stay</h1>
-
+    <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Explore Exciting Activities and Accommodations</h1>
 
        {/* <Info 
         name = {searchData.results.result_object.name}
@@ -106,7 +105,7 @@ function handleInputChange(e){
       
     />       */}
 
-    <h2>Hotels</h2>
+<h2 style={{ textAlign: 'left', margin: '20px 0' }}>Hotels</h2>
     
 
     { searchData.hotel.map((hotelObj,i) => (
@@ -128,7 +127,7 @@ rating = {hotelObj.result_object.rating}
 
 } 
 
-<h2>Attractions</h2>
+<h2 style={{ textAlign: 'left', margin: '20px 0' }}>Attractions</h2> 
 
 { searchData.attraction.map((attractionObj,i) => (
 
