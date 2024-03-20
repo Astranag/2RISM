@@ -1,0 +1,5 @@
+/* active tab  */
+.nav-tabs li .nav-link.active {
+    color: white;
+    background-color: rgb(62, 137, 250);
+}
