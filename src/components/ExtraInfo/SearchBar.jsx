@@ -1,24 +1,24 @@
 import React from 'react'
-
+import './SearchBar.css'
 function SearchBar(props) {
   return (
-    <form>
-        <input
-        type='text'
-        name = 'submit'
-        value={props.value}
-        onChange={props.input}
-        placeholder='search countries...(capitalize first letter)'
-        
-        />
-        <button
-        type='submit'
-        onClick={props.submit}>
-         submit
-        </button>
-
-
-   </form>
+    <form className="search-form">
+    <input
+      type='text'
+      name='submit'
+      value={props.value}
+      onChange={props.input}
+      placeholder='Search countries...'
+      className="search-input"
+    />
+    <button
+      type='submit'
+      onClick={props.submit}
+      className="search-button"
+    >
+      Search
+    </button>
+  </form>
   )
 }
 

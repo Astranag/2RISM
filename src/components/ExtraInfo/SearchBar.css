@@ -1,0 +1,33 @@
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .search-form {
+      flex-direction: column;
+    }
+    
+    .search-input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
