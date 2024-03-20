@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
 import country from '.././utils/RestCountries';
-import Details from './Details'
+import Details from './Details';
+
 
 function ExtraInfo() {
     const [searchData, setSearchData] = useState({
@@ -11,8 +12,29 @@ function ExtraInfo() {
 
     useEffect(() => {
         if (searchData.results.length > 0) {
-            console.log(searchData.results[0].name.common);
-            // Access other properties as needed
+            const result = searchData.results[0];
+            let languageName = '';
+            let currencyName = '';
+
+            // Find the language name without knowing the key in advance
+            Object.keys(result.languages).forEach(key => {
+                languageName = result.languages[key];
+                // You can break the loop here if needed
+            });
+
+            // Find the currency name without knowing the key in advance
+            Object.keys(result.currencies).forEach(key => {
+                currencyName = result.currencies[key].name;
+                // You can break the loop here if needed
+            });
+
+            // Pass the language and currency names to the Details component
+            // Update the state to trigger a re-render with the new props
+            setSearchData(prevState => ({
+                ...prevState,
+                language: languageName,
+                currency: currencyName
+            }));
         }
     }, [searchData.results]);
 
@@ -41,6 +63,7 @@ function ExtraInfo() {
 
     return (
         <>
+         <h1 style={{ fontSize: '40px', color: '#333', textAlign: 'center', marginBottom: '20px' }}> Explore detailed information about a country</h1>
             <SearchBar
                 value={searchData.search}
                 submit={submit}
@@ -53,6 +76,8 @@ function ExtraInfo() {
                 capital={searchData.results.length > 0 ? searchData.results[0].capital[0] : ''}
                 popular={searchData.results.length > 0 ? searchData.results[0].population : ''}
                 side={searchData.results.length > 0 ? searchData.results[0].car.side : ''}
+                language={searchData.language}
+                currency={searchData.currency}
             />
         </>
     );
