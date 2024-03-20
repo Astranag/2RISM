@@ -8,7 +8,7 @@ function SearchBar(props) {
       name='submit'
       value={props.value}
       onChange={props.input}
-      placeholder='Search countries...'
+      placeholder='Search countries...(please captilize first letter)'
       className="search-input"
     />
     <button
