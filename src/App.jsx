@@ -14,6 +14,7 @@ function App() {
     <Router>
     <Header />
     <Routes>
+    <Route path='/home' element = {<a /> } />
     <Route path='/' element = {<PlaceInfo /> } />
     
     <Route path='/map' element={<Map />} />
