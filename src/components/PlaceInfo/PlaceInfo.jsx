@@ -108,39 +108,30 @@ function handleInputChange(e){
 <h2 style={{ textAlign: 'left', margin: '20px 0' }}>Hotels</h2>
     
 
-    { searchData.hotel.map((hotelObj,i) => (
-
-<Hotels 
-
-key = {i}
-title ={hotelObj.result_object.name}
-img = {hotelObj.result_object.photo.images.original.url}
-address = {hotelObj.result_object.address}
-rating = {hotelObj.result_object.rating}
-
-/>
-
-
-))
-
-
-
-} 
+{ searchData.hotel.map((hotelObj, i) => (
+  <Hotels
+    key={i}
+    title={hotelObj.result_object.name}
+    img={hotelObj.result_object.photo?.images?.original?.url || 'https://www.singlegrain.com/wp-content/uploads/2019/07/image1.png'}
+    address={hotelObj.result_object.address}
+    rating={hotelObj.result_object.rating}
+  />
+))}
 
 <h2 style={{ textAlign: 'left', margin: '20px 0' }}>Attractions</h2> 
 
-{ searchData.attraction.map((attractionObj,i) => (
+{ searchData.attraction.length > 0 && searchData.attraction.map((attractionObj,i) => (
 
 <Attractions
 
 key = {i}
 title ={attractionObj.name}
-img = {attractionObj.photo.images.original.url}
+img = {attractionObj.photo?.images?.original?.url || 'https://www.singlegrain.com/wp-content/uploads/2019/07/image1.png' }
 address = {attractionObj.address}
 ranking = {attractionObj.ranking}
 description = {attractionObj.description}
 number = {attractionObj.number}
-booking = {attractionObj.booking.url}
+booking = {attractionObj.booking?.url || 'https://www.tripadvisor.co.uk/'}
 />
 
 
