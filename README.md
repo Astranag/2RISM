@@ -74,7 +74,8 @@ Have a polished front end/UI.
 Follow good quality coding standards, including indentation, scoping, and naming conventions.
 The app should have a high-quality README file, including a unique name, description, technologies used, screenshots, and a link to the deployed application.
 
-  ![Demo]() 
+  ![Demo](src/assets/sparkling-dolphin-abfbd3.netlify.app_.png) 
+  
 
 ## License
 
