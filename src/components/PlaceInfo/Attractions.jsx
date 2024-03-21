@@ -5,8 +5,8 @@ function Attractions(props) {
   return (
     <>
 <div className='container'>
-      <div className='row'>
-        <div className='col-md-6 col-lg-4 mb-4'>
+      <div className='row' >
+        <div className='mb-4'>
           <div className="card">
             <img className="card-img-top" src={props.img} alt="Card image cap" />
             <div className="card-body">
