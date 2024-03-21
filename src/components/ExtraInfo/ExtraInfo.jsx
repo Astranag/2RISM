@@ -63,7 +63,7 @@ function ExtraInfo() {
 
     return (
         <>
-         <h1 style={{ fontSize: '5vw', color: '#333', textAlign: 'center', marginBottom: '20px' }}> Explore detailed information about a country</h1>
+         <h1 style={{ color: '#333', textAlign: 'center', marginBottom: '20px' }}> Explore detailed information about a country</h1>
             <SearchBar
                 value={searchData.search}
                 submit={submit}
