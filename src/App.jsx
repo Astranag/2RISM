@@ -6,6 +6,7 @@ import Header from './components/Header/Header'
 import PlaceInfo from './components/PlaceInfo/PlaceInfo'
 import Map from './components/Map/Map'
 import ExtraInfo from './components/ExtraInfo/ExtraInfo'
+import Footer from './components/Footer/Footer'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
     <Route path='/extra' element={<ExtraInfo />} />
      </Routes>
      </Router>
+     <Footer />
     </>
   )
 }
