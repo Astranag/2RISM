@@ -102,7 +102,7 @@ function handleInputChange(e){
            description={searchData.results.result_object && searchData.results.result_object.geo_description}
     /> 
 
-<Container  style={{ maxWidth: '70rem' }}>   
+<Container  style={{ maxWidth: '70rem', backgroundColor: 'rgb(62, 137, 250)' }}>   
 <Row>
   <Col sm={6}> 
 <h2 style={{ textAlign: 'left', margin: '20px 0' }}>Hotels</h2>

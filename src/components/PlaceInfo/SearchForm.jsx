@@ -1,6 +1,7 @@
 import React from 'react'
  import Button from 'react-bootstrap/Button'
 import './SearchForm.css'
+import { FaSearch } from 'react-icons/fa';
 function SearchForm(props) {
   return (
     <>
@@ -17,7 +18,7 @@ function SearchForm(props) {
     type='submit'
     style={{background: 'rgb(62, 137, 250)', color: 'white'}}
     className="search-button"
-    >submit
+    > <FaSearch />
     </Button>
     </form>
     </>
