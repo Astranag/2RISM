@@ -4,18 +4,16 @@ import Travel from '../utils/TravelAdvisorApi'
 import {NavLink, Link} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import './header.css'
+import { Navbar, Nav} from 'react-bootstrap';
 
 
 
 function Header() {
-
-
-
   return (
-    <nav className="navbar nav navbar-expand-lg bg-warning " >
+    <Nav className="navbar nav navbar-expand-lg bg-warning justify-content-center" >
   <div className="container-fluid" >
     <NavLink className="navbar-brand nav-link" href="/home" to='/'><img src={logo} width="100" height="100" alt="2RISM"/></NavLink>
-    <div className="ms-auto nav-tabs " style={{ marginTop: '10px', listStyle: 'none', display: 'flex'}}> 
+    <div className="nav-tabs " style={{ marginTop: '10px', listStyle: 'none', display: 'flex'}}> 
   <li style={{ marginRight: '10px' }}> 
     <NavLink className="nav-link" activeclassname='active' to='/'>Home</NavLink>
   </li>
@@ -27,7 +25,7 @@ function Header() {
   </li>
 </div>
   </div>
-</nav>
+</Nav>
   )
 }
 
