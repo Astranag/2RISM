@@ -4,7 +4,8 @@ import './Details.css'
 function Details(props) {
     return (
       <>
-         <div className="details-container">
+            
+        <div className="details-container" style={{ minHeight: 'calc(100vh - 34px)' }}>
       <h1>Country: {props.name}</h1>
       <img src={props.flag} alt="flag" className="flag-img" />
       <div className="detail-item">

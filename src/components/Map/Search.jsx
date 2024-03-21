@@ -1,5 +1,6 @@
 import React from 'react'
 import './Search.css'
+import { FaSearch } from 'react-icons/fa';
 
 function Search(props) {
   return (
@@ -21,7 +22,7 @@ function Search(props) {
           onClick={props.handleChange}
           className="search-button"
           >
-            submit
+             <FaSearch />
         </button>
 
     </form>

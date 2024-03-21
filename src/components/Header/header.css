@@ -4,7 +4,7 @@
     background-color: rgb(62, 137, 250);
 }
 
-.navbar .nav-tabs li .nav-link{
+.navbar .nav-tabs li .nav-link{ 
     display: flex;
     justify-content: center;
 }
