@@ -4,7 +4,7 @@ function CityInfo(props) {
   return (
     <>
     
-    <div style={{ textAlign: 'center', margin: '20px 0' }}>
+    <div style={{ textAlign: 'center', margin: '20px 0', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h1>{props.name}</h1>
       <img src={props.image} alt={props.name} style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }} />
       <p style={{ fontSize: '1.2em' }}>{props.description}</p>

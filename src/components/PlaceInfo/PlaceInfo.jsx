@@ -6,6 +6,7 @@ import CityInfo from './CityInfo'
 import Hotels from './Hotels'
 import Attraction from '../../components/utils/Attraction'
 import Attractions from './Attractions'
+import { Container, Row, Col } from 'react-bootstrap';
 
 function PlaceInfo() {
 
@@ -88,8 +89,6 @@ function handleInputChange(e){
 
   return (
     <>
-
-
     <SearchForm 
    value ={searchData.search}
    handleFormSubmit={handleFormSubmit}
@@ -97,17 +96,16 @@ function handleInputChange(e){
     />
     
     <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Explore Exciting Activities and Accommodations</h1>
-
         <CityInfo 
            name={searchData.results.result_object && searchData.results.result_object.name}
            image={searchData.results.result_object && searchData.results.result_object.photo.images.large.url}
            description={searchData.results.result_object && searchData.results.result_object.geo_description}
-      
-    />       
+    /> 
 
+<Container  style={{ maxWidth: '70rem', backgroundColor: 'rgb(62, 137, 250)',  minHeight: 'calc(100vh - 34px)' }}>   
+<Row>
+  <Col sm={6}> 
 <h2 style={{ textAlign: 'left', margin: '20px 0' }}>Hotels</h2>
-    
-
 { searchData.hotel.map((hotelObj, i) => (
   <Hotels
     key={i}
@@ -117,13 +115,13 @@ function handleInputChange(e){
     rating={hotelObj.result_object.rating}
   />
 ))}
-
-<h2 style={{ textAlign: 'left', margin: '20px 0' }}>Attractions</h2> 
+    </Col>
+    <Col sm={6}>
+<h2 style={{ textAlign: 'right', margin: '20px 0' }}>Attractions</h2> 
 
 { searchData.attraction.length > 0 && searchData.attraction.map((attractionObj,i) => (
 
 <Attractions
-
 key = {i}
 title ={attractionObj.name}
 img = {attractionObj.photo?.images?.original?.url || 'https://www.singlegrain.com/wp-content/uploads/2019/07/image1.png' }
@@ -133,13 +131,10 @@ description = {attractionObj.description}
 number = {attractionObj.number}
 booking = {attractionObj.booking?.url || 'https://www.tripadvisor.co.uk/'}
 />
-
-
-))
-
-}
-
-    
+))}
+</Col>  
+</Row>
+</Container>
     </>
   )
 }

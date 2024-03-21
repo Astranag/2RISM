@@ -1,0 +1,21 @@
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0;
+    max-height: 0.2rem;
+}
+
+.footer-links a {
+    font-size: 2rem;
+}
+
+.footer-copyright {
+    margin-top: 1rem;
+}
+
+.footer--pin {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }

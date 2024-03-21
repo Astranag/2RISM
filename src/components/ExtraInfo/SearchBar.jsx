@@ -1,5 +1,6 @@
 import React from 'react'
 import './SearchBar.css'
+import { FaSearch } from 'react-icons/fa';
 function SearchBar(props) {
   return (
     <form className="search-form">
@@ -16,7 +17,7 @@ function SearchBar(props) {
       onClick={props.submit}
       className="search-button"
     >
-      Search
+       <FaSearch />
     </button>
   </form>
   )
